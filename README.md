@@ -1,71 +1,25 @@
-# BookCafe Frontend
+# BookCafe 📚
 
-BookCafe is an educational platform designed for students and teachers to discover, read, and manage digital books. The application allows users to explore books across various categories, manage personal libraries, and for teachers to add and edit book content.
+BookCafe is a comprehensive digital bookstore platform designed for students and teachers. It features a robust Laravel-based API and a modern Next.js frontend, providing a seamless experience for book management and discovery.
 
-## Backend Repository
+## 🏗️ Project Structure
 
-The backend for this project is available at: [BookCafe-Backend](https://github.com/tejaspanchall/BookCafe-Backend)
+This repository is organized as a monorepo containing both the backend and frontend components:
 
-## Features
+- **[Backend](./Backend)**: A RESTful API built with Laravel 12.
+- **[Frontend](./Frontend)**: A modern web application built with Next.js 15.
 
-- 📚 Comprehensive book catalog with categories
-- 📖 Detailed book pages with covers and descriptions
-- 👤 User authentication (login, register, password reset)
-- 🔍 Search and filter capabilities
-- 💼 Personal library management for users
-- 👨‍🏫 Teacher-specific features (add/edit books)
-- 📊 Bulk book import via Excel templates
-- 📱 Responsive design for all devices
-- 🎨 Modern UI with Tailwind CSS
-- ⚡ Fast page loads with Next.js App Router
+## ✨ Key Features
 
-## Technologies Used
+- 📖 **Comprehensive Catalog**: Browse and search books by category, author, or ISBN.
+- 👤 **User Roles**: Specialized features for Students and Teachers.
+- 👨‍🏫 **Teacher Dashboard**: Add, edit, and manage book content, plus bulk imports via Excel.
+- 📚 **Personal Library**: Users can manage their own collection of digital books.
+- ⚡ **High Performance**: Optimized with Redis caching and PostgreSQL full-text search.
+- 🎨 **Modern Interface**: Fully responsive design with Tailwind CSS and Framer Motion.
 
-- **Framework**: [Next.js 15.2.0](https://nextjs.org/) with App Router
-- **UI Library**: [React 19](https://react.dev/)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
-- **Icons**: [React Bootstrap Icons](https://www.npmjs.com/package/react-bootstrap-icons)
-- **Alerts**: [SweetAlert2](https://sweetalert2.github.io/)
-- **Font**: [Geist](https://vercel.com/font)
-- **State Management**: React Context API
-- **Excel Processing**: [PhpSpreadsheet](https://phpspreadsheet.readthedocs.io/) (backend)
+---
 
-## Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher)
-- npm or yarn package manager
-- Backend API server ([BookCafe Backend](https://github.com/tejaspanchall/BookCafe-Backend))
-
-## Getting Started
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/tejaspanchall/BookCafe-Frontend.git
-cd BookCafe-Frontend
-```
-
-2. **Install dependencies:**
-```bash
-npm install
-```
-
-3. **Set up environment variables:**
-Create a `.env.local` file in the root directory with the following variables:
-```env
-NEXT_PUBLIC_BACKEND=http://localhost:8000/api
-```
-
-4. **Start the backend server:**
-Make sure you have the [backend server](https://github.com/tejaspanchall/BookCafe-Backend) running.
-
-5. **Run the development server:**
-```bash
-npm run dev
-```
-
-6. **Access the application:**
-Open your browser and visit `http://localhost:3000`
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+For detailed documentation, please refer to the individual project READMEs:
+- [Backend README](./Backend/README.md)
+- [Frontend README](./Frontend/README.md)
